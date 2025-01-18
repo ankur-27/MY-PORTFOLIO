@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                   
+                    <div class="logo-text"></div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="profile3.jpeg.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5><span class="input">Frontend Developer</span></h5>
+                    <h1>Ankur Das Gupta</h1>
+                    <p> C || C++ || Python || Javascript || Html-Css ||  React || Node.js ||
+
+                           <br>MLH Hackhathon Participant2k24 || Tech Enthusiastic.<br>
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="ANKUR NEW CV.JPEG.jpeg" class="btn active"> Resume</a>
+                       <a href="mailto:ankurdasgupta30@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        
+                        <a href="https://www.linkedin.com/in/ankurdasgupta"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ankur-27"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Backend Developer"],
+            typedSpeed:60,
+            backSpeed:45,
+            loop:true
+        })
+     </script>
+</body>
+</html>
